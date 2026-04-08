@@ -126,7 +126,7 @@ The API will be available at `http://127.0.0.1:8000`
 
 ## Phone Normalization
 
-All phone numbers are automatically normalized to international format:
+All phone numbers are automatically normalized to UK format:
 
 | Input | Normalized |
 |---|---|
