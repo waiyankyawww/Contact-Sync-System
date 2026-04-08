@@ -1,0 +1,458 @@
+{
+	"info": {
+		"_postman_id": "02af4a99-8f18-4797-aafe-ca4718df851f",
+		"name": "Contact-Sync",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12450561"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Test 1\",\n  \"phone\": \"7123 236129\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Test 1\",\n  \"phone\": \"07918123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.4.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Apr 2026 20:17:20 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "XSRF-TOKEN=eyJpdiI6IjBXUnI1RWNYbnY2NUJxVDZPaDJUcHc9PSIsInZhbHVlIjoiTmNhR2dDMjVTTjZEckN5OGRxR3hIVno5UDFHWEhqMVV0NlRkVUE1eTdBQTQyckdzenhCeXc2UWd0bWRVcDJDdFRqclZjcTJzK2lFc0JvbFh4VU5RWXJJbmFHMWxYdGgyLzl3VWJTZzArMFhWaFFrb2swRmgyMUZZVkZvT3hXV3ciLCJtYWMiOiIzNzMxM2NmNTAwNDBkYzkyYTNmMWMzMmI1YzhjZGZkNjkzYzc0OTE1ZDNlZTJmZjhkZWRlNzg2N2IxZjczYTM3IiwidGFnIjoiIn0%3D; expires=Wed, 08 Apr 2026 22:17:20 GMT; Max-Age=7200; path=/; samesite=lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "laravel-session=eyJpdiI6IkhKdk5JbWdnNjFlM3pzck9qRC9MTlE9PSIsInZhbHVlIjoiQnhIQ1pTUCtkMWVLUWxXTWh6d1Z3QmRaZnJ1R2YzNExIQ0lkUjl5NVl4cXRwRnY4WHFXZnV1cUJhN2krRXVBYmg2TW1NSDU3b1UwZDhVL1FRNkNvRUhIaWF5NDNnTmNIZ1ZYTVplYXh4MzlScWZFVVRMUSt0WnoySFpvMHFCREciLCJtYWMiOiI0ZDBlMGFjZTBkNTFkN2M3N2Q4ZGUyZGRmNTMxYmVkZDhmYTBmMDVjZWU3NDFiNTFjODAyZjc3OTNjMzQ1ZDQwIiwidGFnIjoiIn0%3D; expires=Wed, 08 Apr 2026 22:17:20 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Test 1\",\n    \"phone\": \"07918123456\",\n    \"normalized_phone\": \"+447918123456\",\n    \"updated_at\": \"2026-04-08T20:17:20.000000Z\",\n    \"created_at\": \"2026-04-08T20:17:20.000000Z\",\n    \"id\": 21\n}"
+				},
+				{
+					"name": "register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"name\": \"Angel\", \"phone\": \"+44 7123 456799\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.4.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Apr 2026 20:17:54 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "XSRF-TOKEN=eyJpdiI6ImNjdmJqRGdOYW5Dc3JxakIrK21reWc9PSIsInZhbHVlIjoiVzFIbmpkdWtucXJLclJDS3pTWkVybGllSUZsVmdhaUZjMkNzWDVEcnIwTFhpbmM4SC9WYTNHZFluN2JCUkkvMy9rdGIwck04Q2dQdDdoR0dIL3lVZU5PWkgxcU43WFZYQlNzaCtvMjNINW4ycXU1dHhpWFJjWGdNMlJISFhQVUYiLCJtYWMiOiJmNzg5ODVjNTM3MGE2MTYzNGE2OWE1Y2VlNmJiYjE5OTFlYzdlZjk5MmU1ZWFlZWY4OTU3ZjZlMDM3MmM0ZTIxIiwidGFnIjoiIn0%3D; expires=Wed, 08 Apr 2026 22:17:54 GMT; Max-Age=7200; path=/; samesite=lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "laravel-session=eyJpdiI6InRZbmNHWXNadjB6YXkycUxXTnRvdnc9PSIsInZhbHVlIjoidEhEOG9tUlhDM2RxSVdYZkdmZnNrbkJaUkl3NTJhUDRUbGJLZk9TTUE2Skw3ckswTHFZNm0rV0poWW1BenZKY0lzV0I2MzU3RFJZRlErMjY1Q3lRMXJ0c1ZBU1J6dHhZOTlKdDVBMkVCU0FXZDB5OW9McDFhR2cyY1Bva3hnNjgiLCJtYWMiOiJkNzI1MmQxM2FmMGJhMjA1MjI0MjU1Njk3YzM0NzM0MDFiYmJmMDU4YzRjNzk2YmFmNmZkNDE1ZmRkY2Y2ODY0IiwidGFnIjoiIn0%3D; expires=Wed, 08 Apr 2026 22:17:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Angel\",\n    \"phone\": \"+44 7123 456799\",\n    \"normalized_phone\": \"+447123456799\",\n    \"updated_at\": \"2026-04-08T20:17:54.000000Z\",\n    \"created_at\": \"2026-04-08T20:17:54.000000Z\",\n    \"id\": 23\n}"
+				},
+				{
+					"name": "register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"name\": \"Test 2\", \"phone\": \"0    7113  456799\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.4.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Apr 2026 20:18:55 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "XSRF-TOKEN=eyJpdiI6Ik9mZWxrUEFiWHFFbWMwYU9YQXJOc1E9PSIsInZhbHVlIjoiTWdOUEFIS2E1Q1l2eEp2MlMxSkoyQkdVN3NuWExYZk90N0hLS1E0Q3dpa3AxTHBmN0RqMVVuZXdXL2xCbGUzck01ajRtd0xGUFZPdzhrKzRCWjBUS0JSS3hUbmFYZk9EaHFyWHgyTGVJQkwrK095anZzS1RKZGhGOHduNWJoU3EiLCJtYWMiOiI1ZjQ3NjI5MDNkNGNkMjBmYWFkNjYwOGZjNzBhYzAwZWYxZDUyZDRmNGNhOGU0MGNlMjgyYjA0OGEwNzhhNTI2IiwidGFnIjoiIn0%3D; expires=Wed, 08 Apr 2026 22:18:55 GMT; Max-Age=7200; path=/; samesite=lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "laravel-session=eyJpdiI6InpxcUo3dDI5OG83WXdidCtFTHBDdnc9PSIsInZhbHVlIjoieFdiOUtaS0RucWxleW1mdjVlejVUV0NhN1d1SUhoelhRYnBiaGVkK0NNdmdNVWQ3WmtWcFd6UTIwcnFUejJpL3hwT2pYaGlPY01qK0hpdm9oei9zLzA2T3Jlb2h2THhTS0hmM0pBaXNBeXVFa0FUaGx0NUhTcmg5VkdtRkwyN3giLCJtYWMiOiJjMGMyZTJkZWE2ZTBmZTFkZDMxYTljNjMxYTVjNTZkYjc4ZDk5YzM0NWZhY2ZkMDkyMTA1ZjNhZDViMGU3OTVmIiwidGFnIjoiIn0%3D; expires=Wed, 08 Apr 2026 22:18:55 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Test 2\",\n    \"phone\": \"0    7113  456799\",\n    \"normalized_phone\": \"+447113456799\",\n    \"updated_at\": \"2026-04-08T20:18:55.000000Z\",\n    \"created_at\": \"2026-04-08T20:18:55.000000Z\",\n    \"id\": 26\n}"
+				}
+			]
+		},
+		{
+			"name": "Contact-sync",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n  \"contacts\": [\n\n    { \"name\": \"Angel\", \"phone\": \"+44 7123 456789\" },\n\n    { \"name\": \"Test 1\", \"phone\": \"447918123456\" }\n\n ] \n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/contacts/sync",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"contacts",
+						"sync"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n  \"contacts\": [\n\n    { \"name\": \"Angel\", \"phone\": \"+44 7123 456789\" },\n\n    { \"name\": \"Test 1\", \"phone\": \"447918123456\" }\n\n ] \n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/contacts/sync",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"contacts",
+								"sync"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.4.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Apr 2026 20:19:16 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "XSRF-TOKEN=eyJpdiI6IkltM09IS2JneDU5VzBRbHpjYTFRa0E9PSIsInZhbHVlIjoicGQ5am9vUXd2QWtkbExBQ1pFME02Ti9PMFI2cTlDSW1aZVFhRGVUYldrZFZzVXg1amk3Nm1nSHludCtSREYxL3hlYmtPTEkxaGQxS3dheGNRc3U1RmZYNVVPRDNMcnZKOGJrdEFiVmtuNWh4UHliRHVYVWZYM3pIMTJmZXpGMUgiLCJtYWMiOiJkODZlM2UzNzAwMGExNjU3NTM0ODM0OTliOTJhMjJjNjYxY2RhMmRhMzVhZWVmYTQyMGY1NmZjOGFkNWQwNTcyIiwidGFnIjoiIn0%3D; expires=Wed, 08 Apr 2026 22:19:16 GMT; Max-Age=7200; path=/; samesite=lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "laravel-session=eyJpdiI6InVyWkhsQ0d5cDBQbm9DRHJGVmV2V3c9PSIsInZhbHVlIjoiMldJWEUyN0FUdUM5dlBGeE5kR1lqbkhPRW1NQ080U1NmdFc4bmwwOWV5SGExaW5UQ0ozYUJxQmNMeStOdW1UaTU4VTNyZk13cmdQQXNTc2YxRGFhZG5SVVgyeFlmb2Y0WFdoTTkxZEVVdUdtb0hVRDBHNVBVNjl2dFhrcmZqWDkiLCJtYWMiOiI5ZjIwM2ZmOTM4YWFhMGJjMzhlNTE5NmZhN2M0ODQzNDkxODhkODQ5NmVmYWNhOTVhZThhM2FmYzNhZmY1YjFlIiwidGFnIjoiIn0%3D; expires=Wed, 08 Apr 2026 22:19:16 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"total_uploaded\": 2,\n    \"matched\": [\n        {\n            \"name\": \"Angel\",\n            \"phone\": \"+447123456789\",\n            \"user_id\": 1\n        },\n        {\n            \"name\": \"Test 1\",\n            \"phone\": \"+447918123456\",\n            \"user_id\": 21\n        }\n    ],\n    \"unmatched\": []\n}"
+				},
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n  \"contacts\": [\n\n    { \"name\": \"Angel\", \"phone\": \"+44 7123 456789\" },\n\n    { \"name\": \"Ruby\", \"phone\": \"1123 456789\" }\n\n ] \n\n}\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/contacts/sync",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"contacts",
+								"sync"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.4.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Apr 2026 20:19:39 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "XSRF-TOKEN=eyJpdiI6IlZCdWVLclpRayt4WDByaTQ5bWhxOHc9PSIsInZhbHVlIjoib05TYzNIS1AzK2ZmN2ZpcGhyMFowODJMdC9lZUV2THVYNnlqc2t6ditWcFRGSUJid3BlZHA3eENRWkEzalI0d1pXQ01HYyt1UEpkU2RpMldzV0ZLT2tiMW9ISVp2cGF5cnl0anQ1aWliNURrL2dPRG00bmNwaTJvQXBZcXo4UHMiLCJtYWMiOiJkNzdhZWFmMTQ1MmFlYTk5YzQ0NGNmNjYyYzkwNmQ4Yzc3YmVjYjUxMWJiOTBlNTIxMzdjMTExMGI0ODNiYzUxIiwidGFnIjoiIn0%3D; expires=Wed, 08 Apr 2026 22:19:39 GMT; Max-Age=7200; path=/; samesite=lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "laravel-session=eyJpdiI6ImRjYjFWbVVFZFBuNVFPNnVLWjY1MlE9PSIsInZhbHVlIjoiMlFYVG9zR1dLeU13Y1J6UHpmdnVwRHBON0FsMGcxQkxoUXluVWxrYVp2NGhlNmg3NVlYditMR2tkS093Rk0wUGdId01sQ3JUZDNPbVpiS01CRnFTWC9DRXJPQzdsbmtNMWxkR2hFYnNlcC94V2YyZGJsNHFTaFA4VDV6MSs0L1ciLCJtYWMiOiIyOGMyN2RiMmRhYmU2NGNmMjNjMDA5ZjZlMzIyNDZjMmM0NzgwZTdlMzY2Nzg1M2RiMzYzNjY0NDdjNDMzMDk3IiwidGFnIjoiIn0%3D; expires=Wed, 08 Apr 2026 22:19:39 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"total_uploaded\": 2,\n    \"matched\": [\n        {\n            \"name\": \"Angel\",\n            \"phone\": \"+447123456789\",\n            \"user_id\": 1\n        }\n    ],\n    \"unmatched\": [\n        {\n            \"name\": \"Ruby\",\n            \"phone\": \"+1123456789\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
