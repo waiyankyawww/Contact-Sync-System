@@ -19,11 +19,18 @@ class AuthController extends Controller
         // normalize phone
         $normalized = PhoneService::normalize($request->phone);
 
+        if (!$normalized['valid']) {
+            return response()->json([
+                'message' => $normalized['message']
+            ], 422);
+        }
+
         // create the user
         $user = User::create([
             'name' => trim($request->name),
             'phone' => $request->phone,
-            'normalized_phone' => $normalized,
+            // 'normalized_phone' => $normalized,
+            'normalized_phone' => $normalized['formatted'],
         ]);
 
         return response()->json($user);
